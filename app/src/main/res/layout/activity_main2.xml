@@ -15,7 +15,7 @@
         android:layout_marginTop="100dp"
         android:layout_marginEnd="8dp"
         android:text="Welcome"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/black"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -31,6 +31,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="59dp"
         android:text="To Access the personal expense app you need to login first."
+        android:textColor="@android:color/black"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,7 +53,7 @@
         android:inputType="textEmailAddress"
         android:padding="10dp"
         android:textAlignment="viewStart"
-        android:textColorHint="@android:color/darker_gray"
+        android:textColorHint="#D9D7D7"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/editText2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,10 +75,37 @@
         android:inputType="textPassword"
         android:padding="10dp"
         android:textAlignment="viewStart"
+        android:textColorHint="#D9D7D7"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/round_button"
+        android:text="Sign In"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="25dp"
+        android:text="Forget Password?"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button3" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
